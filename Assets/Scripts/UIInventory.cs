@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -11,6 +12,10 @@ public class UIInventory : MonoBehaviour
     UISlot slotPrefab;
     [SerializeField]
     Transform slotsParentTransform;
+    [SerializeField]
+    TextMeshProUGUI countText;
+    [SerializeField]
+    TextMeshProUGUI capacityText;
 
     public List<UISlot> slots = new List<UISlot>();
 
@@ -94,6 +99,8 @@ public class UIInventory : MonoBehaviour
 
     private void InitInventoryUI(List<Item> inventory)
     {
+        countText.text = inventory.Count.ToString();
+        capacityText.text = "/ 15";
         for (int i = 0; i < 15; ++i)
         {
             UISlot uiSlot = Instantiate(slotPrefab, slotsParentTransform);
