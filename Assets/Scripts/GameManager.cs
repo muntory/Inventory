@@ -22,11 +22,14 @@ public class GameManager : MonoBehaviour
         }
 
         SetData();
+
+
     }
 
-    private void Update()
+    private void Start()
     {
-        
+        UIManager.Instance.MainMenuUI.OpenMainMenu();
+
     }
 
     private void SetData()

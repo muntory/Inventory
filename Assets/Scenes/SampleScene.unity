@@ -829,7 +829,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &359218287
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3288,6 +3288,9 @@ MonoBehaviour:
   slotPrefab: {fileID: 7664142738274318714, guid: 22c334904bfdcaf4abe8b41d5d26a0f9,
     type: 3}
   slotsParentTransform: {fileID: 102052285}
+  countText: {fileID: 1861620564}
+  capacityText: {fileID: 938656644}
+  slots: []
 --- !u!1 &912078016
 GameObject:
   m_ObjectHideFlags: 0
